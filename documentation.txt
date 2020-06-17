@@ -146,7 +146,7 @@ It checks LoadBalancer, App1 and App2 statuses, prints their IPs, and checks con
 
 The output trace will look as follows:
 
-user@user-pc:~/refinitiv$ ./check_configuration.sh 
+user@user-pc:~/dima$ ./check_configuration.sh 
  
 ----------------------------------------
 Check Configuration and Test Environment
