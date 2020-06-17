@@ -209,7 +209,7 @@ Check Configuration and Test Environment
  
 Error! LoadBalancer is not running!
 Status: Failure
-dmr@dmr-pc:~/refinitiv$
+dmr@dmr-pc:~/dima$
 
 
 How to use the API:
