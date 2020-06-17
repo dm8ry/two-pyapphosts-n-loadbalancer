@@ -81,9 +81,9 @@ Builds the following images:
 
 ```
 REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
-refinitiv_loadbalancer   latest              111111111111        3 minutes ago       127MB
-refinitiv_app1           latest              222222222222        3 minutes ago       220MB
-refinitiv_app2           latest              333333333333        3 minutes ago       220MB
+dima_loadbalancer   latest              111111111111        3 minutes ago       127MB
+dima_app1           latest              222222222222        3 minutes ago       220MB
+dima_app2           latest              333333333333        3 minutes ago       220MB
 ```
 
 docker-compose up -d
@@ -101,13 +101,13 @@ docker-compose ps
 Should provide output:
 
 ```
-user@user-pc:~/refinitiv$ docker-compose ps
+user@user-pc:~/dima$ docker-compose ps
     Name             Command          State         Ports       
 ----------------------------------------------------------------
 app1           python app.py          Up      5000/tcp          
 app2           python app.py          Up      5000/tcp          
 loadbalancer   nginx -g daemon off;   Up      0.0.0.0:80->80/tcp
-user@user-pc:~/refinitiv$ 
+user@user-pc:~/dima$ 
 ```
 
 docker-compose down
@@ -121,7 +121,7 @@ Stopping app1         ... done
 Removing loadbalancer ... done
 Removing app2         ... done
 Removing app1         ... done
-Removing network refinitiv_default
+Removing network dima_default
 ```
 
 Using vagrant:
@@ -158,7 +158,7 @@ It checks LoadBalancer, App1 and App2 statuses, prints their IPs, and checks con
 
 The output trace will look as follows:
 
-user@user-pc:~/refinitiv$ ./check_configuration.sh 
+user@user-pc:~/dima$ ./check_configuration.sh 
  
 ```
 ----------------------------------------
@@ -200,7 +200,7 @@ Status: Success
 
 or
 
-user@user-pc:~/refinitiv$ ./check_configuration.sh 
+user@user-pc:~/dima$ ./check_configuration.sh 
 
 ```
 ----------------------------------------
